@@ -1,0 +1,148 @@
+.home-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.section-one {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1280px;
+  height: 600px;
+  display: flex;
+}
+
+.block-left {
+  width: 60%;
+  height: 600px;
+  background-color: #2a254b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.block-left h1 {
+  font-size: 32px;
+}
+
+.block-left button {
+  padding: 15px 25px;
+  border: none;
+  background: none;
+  background-color: #55516a;
+  color: white;
+  margin-top: 40px;
+}
+
+.block-left p {
+  line-height: 1.8;
+}
+
+.block-right {
+  background: url(../../img/page1/photo1.png);
+  width: 40%;
+}
+
+.section-two {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-two > h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.section-two .container {
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  padding: 0 120px;
+}
+
+.section-two .container .block-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-two .container .block-item h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.section-two .container .block-item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.section-three .container {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 120px;
+}
+
+.section-three > h1 {
+  padding: 40px 120px;
+  font-weight: 400;
+}
+
+.section-three .button button {
+  padding: 20px 25px;
+  border: none;
+  background: #f9f9f9;
+  margin-bottom: 50px;
+}
+
+.section-three .button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .block-right {
+    display: none;
+  }
+  .block-left {
+    width: 100%;
+  }
+  .section-two .container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .section-three .container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+
+  .section-three {
+    margin-top: 280px;
+  }
+
+  .section-three > h1 {
+    padding: 5px 20px;
+  }
+
+  .section-three .button {
+    margin-top: 90px;
+  }
+}
