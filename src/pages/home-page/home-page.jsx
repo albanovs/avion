@@ -18,7 +18,6 @@ export default function HomePage() {
 
     return (
         <div className='home-page'>
-            <Header />
             <div className='section-one'>
                 <div className='container'>
                     <div className='block-left'>
